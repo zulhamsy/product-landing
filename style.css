@@ -33,6 +33,7 @@ a {
 .lead {
   font-size: 0.9rem;
   font-weight: 100;
+  line-height: 1.3rem;
 }
 
 .bg-text {
@@ -42,6 +43,10 @@ a {
   font-weight: 600;
   color: #EDE8E8;
   opacity: 0.5;
+}
+
+section {
+  margin-bottom: 3rem;
 }
 
 /*Navbar*/
@@ -125,4 +130,30 @@ a {
 #jumbotron > .jumbotron-text > .lead {
   margin-top: 0.5rem;
   line-height: 1.4rem;
+}
+
+/*Hero*/
+#hero-page {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#hero-page > .hero-img {
+  flex: 1;
+}
+
+#hero-page > .hero-img > img {
+  width: 100%;
+}
+
+#hero-page > .hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-page > .hero-text > .title {
+  margin-bottom: 1.5rem;
 }
