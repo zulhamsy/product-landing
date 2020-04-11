@@ -137,7 +137,6 @@ section {
 #hero-page {
   display: flex;
   flex-direction: row-reverse;
-  background: var(--bg-light);
 }
 
 #hero-page > .hero-img {
