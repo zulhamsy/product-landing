@@ -58,8 +58,23 @@ a {
 
 #nav > .logo ~ a {
   display: inline-block;
-  padding: 5px;
+  padding: 5px 5px 0 5px;
   color: inherit;
+  position: relative;
+}
+
+#nav >.logo ~ a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  border-bottom: 2px solid #112d4e;
+  width: 0%;
+  transition: 0.5s ease;
+}
+
+#nav > .logo ~ a:hover:after {
+  width: 100%;
 }
 
 /*Jumbotron*/
