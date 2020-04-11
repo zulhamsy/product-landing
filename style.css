@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+/* Variable */
+:root {
+  --bg-light: #f9f7f7;
+  --bg-white: #ffffff;
+}
+
 body {
   font-size: 14px;
   padding: 0 10px;
@@ -44,7 +50,7 @@ a {
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  background: #f9f7f7;
+  background: var(--bg-white);
 }
 
 #nav > .logo {
@@ -82,7 +88,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f9f7f7;
+  background: var(--bg-white);
   padding: 1rem 0.5rem;
 }
 
