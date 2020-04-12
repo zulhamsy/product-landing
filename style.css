@@ -11,8 +11,8 @@
   --bg-light: #f9f7f7;
   --bg-white: #ffffff;
   --primary: #112d4e;
-  --secondary: rgba(17, 45, 78, 0.6);
-  --bg-text: rgba(17, 45, 78, 0.05);
+  --secondary: rgba(17, 45, 78, 0.75);
+  --bg-text: rgba(17, 45, 78, 0.04);
 }
 
 body {
