@@ -208,3 +208,13 @@ section {
 #features > .cards > .card > h3{
   padding-bottom: 0.5rem;
 }
+
+/*Video*/
+#video > iframe {
+  width: 100%;
+}
+
+#video > h2 {
+  margin-top: -1rem;
+  padding-bottom: 1.5rem;
+}
