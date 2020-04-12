@@ -17,7 +17,6 @@
 
 body {
   font-size: 14px;
-  padding: 0 10px;
   width: 100vw;
   color: var(--primary);
   font-family: sans-serif;
@@ -63,9 +62,18 @@ a {
   flex-basis: 50%;
 }
 
+.card-title {
+  font-size: 0.9rem;
+}
+
+.card-description {
+  font-size: 0.6rem;
+  color: var(--secondary);
+}
+
 section {
   margin-bottom: 3rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1.5rem;
 }
 
 /*Navbar*/
@@ -180,8 +188,23 @@ section {
 /*Features*/
 #features {
   background: var(--bg-light);
+
 }
 
 #features > .lead {
   margin: 0.5rem 0;
+  padding-bottom: 1rem;
+}
+
+#features > .cards > .card {
+  margin-bottom: 1.5rem;
+}
+
+#features > .cards > .card > i {
+  font-size: 1.7rem;
+  padding-bottom: 0.2rem;
+}
+
+#features > .cards > .card > h3{
+  padding-bottom: 0.5rem;
 }
