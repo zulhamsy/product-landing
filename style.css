@@ -10,13 +10,16 @@
 :root {
   --bg-light: #f9f7f7;
   --bg-white: #ffffff;
+  --primary: #112d4e;
+  --secondary: rgba(17, 45, 78, 0.6);
+  --bg-text: rgba(17, 45, 78, 0.05);
 }
 
 body {
   font-size: 14px;
   padding: 0 10px;
   width: 100vw;
-  color: #112d4e;
+  color: var(--primary);
   font-family: sans-serif;
 }
 
@@ -34,6 +37,7 @@ a {
   font-size: 0.9rem;
   font-weight: 100;
   line-height: 1.3rem;
+  color: var(--secondary);
 }
 
 .text-center {
@@ -45,8 +49,18 @@ a {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #EDE8E8;
-  opacity: 0.5;
+  color: var(--bg-text);
+}
+
+.cards  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+  flex-basis: 50%;
 }
 
 section {
@@ -68,8 +82,8 @@ section {
 }
 
 #nav > .logo > span {
-  background: #112d4e;
-  color: #f9f7f7;
+  background: var(--primary);
+  color: var(--bg-light);
 }
 
 #nav > .logo ~ a {
@@ -84,7 +98,7 @@ section {
   position: absolute;
   bottom: 0;
   left: 5px;
-  border-bottom: 2px solid #112d4e;
+  border-bottom: 2px solid var(--primary);
   width: 0%;
   transition: 0.5s ease;
 }
@@ -166,4 +180,8 @@ section {
 /*Features*/
 #features {
   background: var(--bg-light);
+}
+
+#features > .lead {
+  margin: 0.5rem 0;
 }
