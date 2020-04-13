@@ -71,6 +71,20 @@ a {
   color: var(--secondary);
 }
 
+.btn {
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 800;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--bg-white);
+}
+
 section {
   margin-bottom: 1.5rem;
   padding: 0.5rem 1.5rem;
@@ -230,4 +244,59 @@ section {
 #core-feature > i {
   padding: 0.5rem 0.5rem;
   opacity: 0.6;
+}
+
+/* Subs */
+#subs {
+  background: var(--bg-light);
+}
+
+#subs > h2,
+#subs > p {
+  padding-bottom: 0.5rem;
+}
+
+.form>.form-element {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form>.form-element>input {
+  background: inherit;
+  border: 0;
+  outline: none;
+  height: 30px;
+  border-bottom: 1px solid var(--secondary);
+  width: 50%;
+}
+
+.form>.form-element>.form-label {
+  display: inline-block;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid var(--secondary);
+  transition: 0.5s ease;
+}
+
+.form>.form-element>.form-label>.label-content {
+  position: relative;
+  top: 0;
+  font-size: 0.9rem;
+  color: var(--secondary);
+  transition: 0.5s ease;
+}
+
+/*Animation*/
+.form>.form-element>input:focus+.form-label,
+.form>.form-element>input:valid+.form-label {
+  width: 50%;
+}
+
+.form>.form-element>input:focus+.form-label>.label-content,
+.form>.form-element>input:valid+.form-label>.label-content {
+  top: -25px;
+  font-size: 0.7rem;
+  color: var(--primary);
 }
