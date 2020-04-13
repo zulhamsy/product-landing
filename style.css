@@ -234,12 +234,12 @@ section {
 }
 
 /*Video*/
-#video > iframe {
+#video-container > iframe {
   width: 100%;
   border-radius: 5px;
 }
 
-#video > h2 {
+#video-container > h2 {
   padding-bottom: 1.5rem;
 }
 
