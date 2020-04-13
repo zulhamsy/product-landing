@@ -11,12 +11,15 @@
 </head>
 
 <body id="home">
-  <nav id="nav">
-    <h1 class="logo"><span>AC</span>RM</h1>
-    <a href="#home">Home</a>
-    <a href="#features">Services</a>
-    <a href="#core-feature">Client</a>
-  </nav>
+  <header id="header">
+    <nav id="nav-bar">
+      <img src="" alt="" id="header-img">
+      <h1 class="logo"><span>AC</span>RM</h1>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#features">Services</a>
+      <a class="nav-link" href="#core-feature">Client</a>
+    </nav>
+  </header>
   <section id="jumbotron">
     <div class="jumbotron-img">
       <img src="./img/office-chair.png" alt="chair" />
@@ -66,7 +69,7 @@
     </section>
   <section id="video">
     <h2 class="text-center">Some Video</h2>
-    <iframe src="https://www.youtube.com/embed/E--4mzIoTeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="video" src="https://www.youtube.com/embed/E--4mzIoTeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
   <section id="core-feature">
     <i class="fab fa-apple"></i>
@@ -81,15 +84,16 @@
   <section id="subs">
     <h2 class="text-center">Get Updates</h2>
     <p class="lead text-center">Subscribe to get daily updates, news and notification</p>
-    <form class="form" action="" method="get" accept-charset="utf-8">
+    <form id="form" class="form" action="https://www.freecodecamp.com/email-submit" method="get" accept-charset="utf-8">
       <div class="form-element">
-        <input type="email" name="email" id="email" autocomplete="off" required />
+        <input type="email" name="email" id="email" autocomplete="off" placeholder=" " required />
         <label for="email" class="form-label"><span class="label-content">Email</span></label>
       </div>
-      <button class="btn btn-primary" type="submit">Subscribe</button>
+      <button id="submit" class="btn btn-primary" type="submit">Subscribe</button>
     </form>
   </section>
   <script src="https://kit.fontawesome.com/4039030ec9.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
