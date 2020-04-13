@@ -238,10 +238,10 @@ section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  font-size: 3rem;
 }
 
 #core-feature > i {
+  font-size: 3rem;
   padding: 0.5rem 0.5rem;
   opacity: 0.6;
 }
@@ -267,7 +267,7 @@ section {
   outline: none;
   height: 30px;
   border-bottom: 1px solid var(--secondary);
-  width: 50%;
+  width: 75%;
 }
 
 .form>.form-element>.form-label {
@@ -291,7 +291,7 @@ section {
 /*Animation*/
 .form>.form-element>input:focus+.form-label,
 .form>.form-element>input:valid+.form-label {
-  width: 50%;
+  width: 75%;
 }
 
 .form>.form-element>input:focus+.form-label>.label-content,
